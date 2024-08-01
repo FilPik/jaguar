@@ -1,0 +1,38 @@
+.login-card {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #F1F1F2;
+    border-radius: 8px;
+  }
+  
+  mat-card-title {
+    color: #1995AD;
+    text-align: center;
+  }
+  
+  .form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #1995AD;
+    color: #F1F1F2;
+  }
+  
+  button:hover {
+    background-color: #A1D6E2;
+  }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .success-message {
+    color: lightgreen;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

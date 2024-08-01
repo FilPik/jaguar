@@ -1,0 +1,35 @@
+.dashboard-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #1995AD;
+  }
+  
+  .dashboard-header button {
+    color: #F1F1F2;
+  }
+  
+  .dashboard-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .dashboard-container h1 {
+    color: #1995AD;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,28 @@
+<div class="dashboard-header">
+    <button mat-button (click)="logout()">Logout</button>
+  </div>
+  <div class="dashboard-container">
+    <h1>Welcome to the Dashboard</h1>
+    <form (ngSubmit)="save()">
+      <table>
+        <tr *ngFor="let player of players; let i = index">
+          <td>{{ player.name }}</td>
+          <td>
+            <mat-form-field appearance="fill">
+              <mat-label>Item Name</mat-label>
+              <input matInput [(ngModel)]="player.itemName" name="itemName{{i}}">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-checkbox [(ngModel)]="player.received" name="received{{i}}">Received</mat-checkbox>
+          </td>
+          <td>
+            <button mat-button color="warn" type="button" (click)="removePlayer(i)">Remove</button>
+          </td>
+        </tr>
+      </table>
+      <button mat-raised-button color="primary" type="submit">Save</button>
+    </form>
+    <button mat-raised-button color="accent" type="button" (click)="addPlayer()">Add Player</button>
+  </div>
+  

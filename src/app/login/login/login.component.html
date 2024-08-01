@@ -1,0 +1,36 @@
+<mat-card class="login-card">
+  <mat-card-title>Login</mat-card-title>
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Username</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="username"
+        name="username"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Login</button>
+    @if (successMessage){
+    <p class="success-message">
+        {{ successMessage }}
+    </p>
+    } 
+    @else if (errorMessage) {
+    <p class="error-message">
+      {{ errorMessage }}
+    </p>
+    }
+  </form>
+</mat-card>
